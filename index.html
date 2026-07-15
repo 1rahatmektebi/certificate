@@ -320,12 +320,16 @@ function generateCertificate(event){
 
     document.getElementById("inputForm").style.display = "none";
     document.getElementById("certificateWrapper").style.display = "block";
+    // Сақтаған кезде файл атауы мұғалімнің атымен шығуы үшін веб-беттің тақырыбын өзгерту
+document.title = `Сертификат - ${name}`;
 }
 
 function goBack(){
 
     document.getElementById("inputForm").style.display = "block";
     document.getElementById("certificateWrapper").style.display = "none";
+    // Артқа қайтқанда веб-бет тақырыбын бастапқы қалпына келтіру
+document.title = "Заманауи Сертификат Генераторы";
 }
 
 </script>
